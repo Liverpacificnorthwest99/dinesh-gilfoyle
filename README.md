@@ -18,49 +18,13 @@ When it's over, you get an actionable summary: what to fix, what's actually fine
 
 ## Installation
 
-**Note:** Installation differs by platform. The auto-installer handles everything, or you can install manually per agent.
-
-### Auto-installer (recommended)
-
 ```bash
 curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/install.sh | bash
 ```
 
-One command. It detects which coding agents you have and sets up /dg for each one.
+That's it. The installer auto-detects which coding agents you have — Claude Code, Codex, OpenCode, Cursor, Windsurf — and sets up /dg for each one.
 
-### Claude Code
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.claude/INSTALL.md
-```
-
-### Codex CLI
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.codex/INSTALL.md
-```
-
-### OpenCode
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.opencode/INSTALL.md
-```
-
-### Cursor
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.cursor/INSTALL.md
-```
-
-### Windsurf
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.windsurf/INSTALL.md
-```
-
-### Verify Installation
-
-Start a new session and type `/dg`. If the skill loads and asks what to review, you're good. If Gilfoyle insults your code, you're *really* good.
+Start a new session and type `/dg`. If Gilfoyle insults your code, you're good.
 
 ## Usage
 
