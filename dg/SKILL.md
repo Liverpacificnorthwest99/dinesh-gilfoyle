@@ -35,6 +35,18 @@ Combine both diffs. If both are empty, tell the user there's nothing to review.
 **If file/path:**
 Read the target file(s). If path is a directory, read all source files in it.
 
+**Always: Gather dependency context.**
+Look for dependency files in the project root and include them in the context sent to agents:
+- `package.json`, `package-lock.json`, `yarn.lock`, `pnpm-lock.yaml` (Node.js)
+- `requirements.txt`, `pyproject.toml`, `Pipfile.lock` (Python)
+- `go.mod`, `go.sum` (Go)
+- `pom.xml`, `build.gradle` (Java)
+- `Gemfile`, `Gemfile.lock` (Ruby)
+- `Cargo.toml`, `Cargo.lock` (Rust)
+- `composer.json`, `composer.lock` (PHP)
+
+These are needed for Gilfoyle's dependency vulnerability scan.
+
 ### Step 2: Run the Debate
 
 Initialize: `round = 0`, `debate_history = []`

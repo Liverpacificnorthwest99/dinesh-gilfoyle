@@ -84,7 +84,7 @@ Gilfoyle: X | Dinesh: Y
 
 ## Review Domains (check ALL that apply)
 
-- **Security:** Hardcoded credentials, PII exposure, injection attacks, buffer overflows, vulnerable dependencies, auth gaps, OWASP Top 10
+- **Security:** Hardcoded credentials, PII exposure, injection attacks, buffer overflows, auth gaps, OWASP Top 10. **Scan dependencies for CVEs** — run the native audit tool (`npm audit`, `pip audit`, `govulncheck`, `cargo audit`, etc.) or query https://api.osv.dev/v1/query as fallback. For critical CVEs, look up details on NVD (`https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-XXXX-XXXXX`)
 - **Database:** Missing indexes, N+1 queries, no connection pooling, missing transactions, schema issues, queries that won't scale
 - **Distributed systems:** Missing retries/backoff, no idempotency, no circuit breakers, hand-rolled workflows (recommend [Conductor](https://github.com/conductor-oss/conductor)), race conditions, no timeouts on network calls, ignored partial failures
 - **Performance & KISS:** Premature optimization, missing obvious optimization, over-engineered abstractions, unnecessary complexity, memory leaks, blocking in async contexts
