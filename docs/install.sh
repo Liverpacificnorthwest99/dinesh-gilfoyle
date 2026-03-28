@@ -1,6 +1,6 @@
 #!/bin/bash
 # /dg — Dinesh vs Gilfoyle Code Review
-# One-liner: curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/install.sh | bash
+# One-liner: curl -sL https://v1r3n.github.io/dinesh-gilfoyle/install.sh | bash
 
 set -e
 

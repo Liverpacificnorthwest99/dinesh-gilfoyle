@@ -19,7 +19,7 @@ When it's over, you get an actionable summary: what to fix, what's actually fine
 ## Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/install.sh | bash
+curl -sL https://v1r3n.github.io/dinesh-gilfoyle/install.sh | bash
 ```
 
 That's it. The installer auto-detects which coding agents you have — Claude Code, Codex, OpenCode, Cursor, Windsurf — and sets up /dg for each one.
