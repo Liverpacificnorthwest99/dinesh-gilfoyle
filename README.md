@@ -18,53 +18,44 @@ When it's over, you get an actionable summary: what to fix, what's actually fine
 
 ## Installation
 
+**Note:** Installation differs by platform. The auto-installer handles everything, or you can install manually per agent.
+
+### Auto-installer (recommended)
+
 ```bash
 curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/install.sh | bash
 ```
 
-One command. It auto-detects which coding agents you have installed and sets up /dg for each one.
+One command. It detects which coding agents you have and sets up /dg for each one.
 
 ### Claude Code
 
-```bash
-mkdir -p ~/.claude/skills/dg
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/SKILL.md -o ~/.claude/skills/dg/SKILL.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/gilfoyle-agent.md -o ~/.claude/skills/dg/gilfoyle-agent.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/dinesh-agent.md -o ~/.claude/skills/dg/dinesh-agent.md
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.claude/INSTALL.md
 ```
 
 ### Codex CLI
 
-```bash
-mkdir -p ~/.codex/skills/dg
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/SKILL.md -o ~/.codex/skills/dg/SKILL.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/gilfoyle-agent.md -o ~/.codex/skills/dg/gilfoyle-agent.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/dinesh-agent.md -o ~/.codex/skills/dg/dinesh-agent.md
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.codex/INSTALL.md
 ```
 
 ### OpenCode
 
-```bash
-mkdir -p ~/.config/opencode/skills/dg
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/SKILL.md -o ~/.config/opencode/skills/dg/SKILL.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/gilfoyle-agent.md -o ~/.config/opencode/skills/dg/gilfoyle-agent.md
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/dg/dinesh-agent.md -o ~/.config/opencode/skills/dg/dinesh-agent.md
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.opencode/INSTALL.md
 ```
 
 ### Cursor
 
-```bash
-mkdir -p .cursor/rules
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/cursor/dg.mdc -o .cursor/rules/dg.mdc
 ```
-
-Note: Cursor rules are project-level. Run this in each project where you want `/dg`.
+Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.cursor/INSTALL.md
+```
 
 ### Windsurf
 
-```bash
-mkdir -p ~/.codeium/windsurf/rules
-curl -sL https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/windsurf/dg.md -o ~/.codeium/windsurf/rules/dg.md
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/v1r3n/dinesh-gilfoyle/main/.windsurf/INSTALL.md
 ```
 
 ### Verify Installation
